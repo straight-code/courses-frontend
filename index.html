@@ -9,6 +9,22 @@
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdn.oesmith.co.uk/morris-0.5.1.css'><link rel="stylesheet" href="./stats.css">
 <link href="https://straight-code.github.io/assets/straight-code.png" rel="shortcut icon" />
+<script>
+  (function(d,t) {
+    var BASE_URL="https://app.chatwoot.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'ARP8skm4TeZAHf8nxsnBwCpv',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
